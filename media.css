@@ -1,0 +1,89 @@
+@media (max-width: 600px) {
+    .main-image {
+display: none;
+    }
+
+    .section-container {
+display: flex;
+flex-direction: column-reverse;
+gap: 3rem;
+margin-bottom: 15rem;
+    }
+
+    .cards{
+        overflow-x: scroll;
+    }
+
+}
+
+@media (max-width:1200px) {
+    .gallery{
+        display: flex;
+        
+    }
+
+    .container-gallery{
+        overflow: hidden;
+    }
+
+    .aside-container{
+        overflow: hidden;
+    }
+}
+
+@media (max-width:950px) {
+    .links {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+    .links .btn {
+        display: none !important;
+    }
+    
+}
+
+
+
+@media (max-width: 900px) {
+    .burger-menu .btn {
+        display: none !important;
+    }
+}
+
+@media (max-width: 950px) {
+    .grid-images {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .search-box {
+        display: none;
+    }
+    .hero-content {
+        font-size: 10px;
+    }
+
+}
+
+
+    @media (max-width: 600px) {
+        .newsletter-conainer {
+          flex-direction: column;
+        }
+      
+        .newsletter-label {
+          width: 100%;
+        }
+      
+        .newsletter-button {
+          width: 100%;
+        }
+        .newsletter-content .nwsletter-title{
+            align-items: baseline;
+            font-size: 12px;
+            display: block;
+        }
+      }
