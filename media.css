@@ -1,14 +1,17 @@
-@media (max-width: 600px) {
+@media (max-width: 950px) {
     .main-image {
-display: none;
+    display: none;
+    flex-direction: column;
+    
     }
 
-    .section-container {
-display: flex;
-flex-direction: column-reverse;
-gap: 3rem;
-margin-bottom: 15rem;
+    .section-container {    
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 6rem;
+    margin-bottom: 25rem;
     }
+    
 
     .cards{
         overflow-x: scroll;
@@ -59,7 +62,7 @@ margin-bottom: 15rem;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 950px) {
     .search-box {
         display: none;
     }
@@ -68,10 +71,46 @@ margin-bottom: 15rem;
     }
 
 }
-@media (max-width: 600px) {
+@media (max-width: 375px) {
+    .search-box {
+        display: none;
+    }
+     .hero-content h1 {
+        font-size: 22px !important;
+        margin-left: 10px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .section-container {    
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 6rem;
+        margin-bottom: 13rem;
+        }
+        .secondary-image {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 80px;
+            left: 70px;
+            box-shadow: none;
+        }
+        .play-button {
+            display: none;
+        }
+    }
+
+    
+@media (max-width: 375px) {
     .secondary-image {
-        padding-top: 20px;
-        padding-left: 3,5rem;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-left: 4,5rem;
     }
 }
 
@@ -80,17 +119,58 @@ margin-bottom: 15rem;
             font-size: 15px;
         }
         .newsletter-wrapper {
+            display: flex;
+            padding-right: 100px;
             flex-direction: column;
             height: 420px;
             width: 520px;
         }
         .newsletter-button {
+            display: flex;
             flex-direction: column;
         }
       }
 
-      @media (max-width: 600px) {
+      @media (max-width: 950px) {
         .gallery {
             height: 120px;
         }
       }
+      /* Карточки с анимацией */
+      @media(max-width: 375px) {
+        .aside-container {
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            overflow-x: scroll;
+        }
+        .top-text {
+            margin: 0 auto;
+        }
+      }
+
+      @media(max-width: 375px) {
+        .grid-container {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+           width: 380px;
+        }
+        .center-two-text {
+            padding-top: 20px;
+        }
+      }
+
+      @media(max-width: 375px) {
+        .footer-top {
+            width: 480px;
+            background-color: #1a3e3e;
+        }
+        .footer-flex {
+            display: flex;
+            flex-direction: column; 
+        }
+      }
+
+    
