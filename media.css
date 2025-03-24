@@ -14,8 +14,7 @@
     
 
     .cards{
-        overflow-x: scroll;
-        scroll-snap-align: center;
+        /* scroll-snap-align: center; */
     }
 
 }
@@ -31,7 +30,7 @@
     }
 
     .aside-container{
-        overflow: hidden;
+        overflow-x: auto;
     }
 }
 
@@ -82,20 +81,22 @@
 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
     .section-container {    
         display: flex;
         flex-direction: column-reverse;
         gap: 6rem;
-        margin-bottom: 13rem;
+        margin-bottom: 5rem;
         }
         .secondary-image {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            top: 80px;
-            left: 70px;
-            box-shadow: none;
+        display: flex;
+        margin: 0 auto !important;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center !important;
+        padding-top: 80px;
+        padding: 0 auto;
+        box-shadow: none;
         }
         .play-button {
             display: none;
@@ -103,16 +104,8 @@
     }
 
     
-@media (max-width: 375px) {
-    .secondary-image {
-        display: flex;
-        margin: 0 auto;
-        justify-content: center;
-        flex-direction: column;
-        padding-top: 50px;
-        padding-left: 4,5rem;
-    }
-}
+
+
 
     @media (max-width: 600px) {
         .newsletter-title{
@@ -142,7 +135,7 @@
             display: flex;
             flex-direction: column;
             padding-top: 20px;
-            overflow-x: scroll;
+            
         }
         .top-text {
             margin: 0 auto;
