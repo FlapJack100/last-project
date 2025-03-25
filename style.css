@@ -200,26 +200,17 @@ h1 {
     font-size: 50px;
 }
 
-.section-container {
-    width: 100%;
-    max-width: 1100px;
-    height: 700px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 120px;
-    padding: 20px;
-}
+
 
 .section-container {
     width: 100%;
     max-width: 1200px;
+    min-height: 700px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    
     padding: 20px;
 }
 
@@ -445,12 +436,11 @@ text-align: center;
 /* Все Карточки */
 .cards { 
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     padding-top: 20px;
     margin: 10rem auto 1rem auto;
-    overflow-x: auto;
     
 }
 
@@ -503,22 +493,7 @@ text-align: center;
 }
 
 /* Текст в самом Карточке */
-.overlay-aside{
-    position: absolute;
-    border-radius: 20px;
-    bottom: -80%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: bottom 1.4s ease-in-out;
-    
-}
+
 
 .card:hover .overlay-aside {
     bottom: 0;
@@ -566,15 +541,18 @@ font-size: 14px;
 
 /* Цена на карточке */
 .text-in-cards .bill{
-    position: relative;
-    right: -220px;
-    top: 25px;
     font-size: 20px;
     background-color: #FFFFFF33;
     font-weight: 500;
     width: 70px;
     height: auto;
     text-align: center;
+}
+
+.text-our-bill {
+    display: flex;
+    justify-content: space-between !important;
+    width: 100%;
 }
 
 /* кнопка в карточке */
@@ -617,16 +595,13 @@ font-size: 14px;
   .overlay-aside {
     position: absolute;
     border-radius: 20px;
+    padding: 10px;
     bottom: -80%;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.2);
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     transition: bottom 1.4s ease-in-out;
   }
   
@@ -1090,15 +1065,10 @@ footer{
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding: 30px 50px;
+    padding: 30px 5px;
     border-radius: 6px;
     box-shadow: 0 0 15px rgba(24, 18, 30, 0.12);
     background: #fdfdfd;
-}
-
-.newsletter-content {
-    flex: 1;
-    text-align: left;
 }
 
 .newsletter-subtitle {
