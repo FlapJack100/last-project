@@ -331,6 +331,9 @@
     .play-button {
         display: none;
     }
+    .left-text {
+        padding-left: 30px;
+    }
 }
 
 @media (max-width: 375px) {
