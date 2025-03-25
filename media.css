@@ -76,7 +76,7 @@
     }
      .hero-content h1 {
         font-size: 22px !important;
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
 }
@@ -113,12 +113,21 @@
         }
         .newsletter-wrapper {
             display: flex;
-            padding-right: 100px;
+            padding: 0;
             flex-direction: column;
-            height: 420px;
             width: 520px;
         }
         .newsletter-button {
+            display: flex;
+            flex-direction: column;
+        }
+        .newsletter-container {
+            padding: 0;
+        }
+      }
+
+      @media (max-width: 850px) {
+        .newsletter-wrapper {
             display: flex;
             flex-direction: column;
         }
@@ -166,4 +175,195 @@
         }
       }
 
+    @media (min-width: 768px) {
+    .newsletter-wrapper {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
+    }
     
+    .newsletter-content {
+        text-align: left;
+        flex: 1;
+    }
+    
+    .newsletter-form-container {
+        flex: 1;
+    }
+    
+    .input-group {
+        flex-direction: row;
+    }
+    
+    .newsletter-form input {
+        flex: 2;
+    }
+    
+    .newsletter-form button {
+        flex: 1;
+        width: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .newsletter-title {
+        font-size: 32px;
+    }
+    
+    .newsletter-wrapper {
+        padding: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter {
+        padding: 40px 0;
+    }
+    
+    .newsletter-wrapper {
+        padding: 30px 20px;
+    }
+    
+    .newsletter-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        min-height: 90px;
+    }
+    .hero-content h1 {
+        font-size: 23px !important;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-text h2 {
+        font-size: 26px !important;
+    }
+    .top-text h3 {
+       padding-top: 20px; 
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .newsletter-wrapper {
+        flex-direction: row;
+        padding: 50px;
+    }
+    .newsletter-content {
+        text-align: left;
+        flex: 1;
+    }
+    .newsletter-form-container {
+        flex: 1;
+    }
+    .input-group {
+        flex-direction: row;
+    }
+    .newsletter-form input {
+        flex: 2;
+    }
+    .newsletter-form button {
+        flex: 1;
+        width: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter-title {
+        font-size: 22px;
+    }
+    .newsletter-wrapper {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+    .newsletter-form {
+        flex-direction: column;
+    }
+    .newsletter-input,
+    .newsletter-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter {
+        padding: 40px 0;
+    }
+    .newsletter-wrapper {
+        padding: 30px 20px;
+    }
+    .newsletter-title {
+        font-size: 20px;
+    }
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+    }
+    .center-two-text {
+        padding-top: 20px;
+    }
+    .footer-flex {
+        display: flex;
+        flex-direction: column; 
+    }
+}
+
+@media (max-width: 450px) {
+    .section-container {    
+        margin-bottom: 5rem;
+    }
+    .secondary-image {
+        margin: 0 auto !important;
+        padding-top: 80px;
+        box-shadow: none;
+    }
+    .play-button {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .hero-content h1 {
+        font-size: 22px !important;
+        margin-left: 10px;
+    }
+    .aside-container {
+        padding-top: 20px;
+    }
+
+    .grid-container {
+        transform: translateX(-1.3rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container-img {
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-container-flex img {
+        height: 180px;
+    }
+    
+    .flex-grow-text h2 {
+        font-size: 1rem;
+    }
+    
+    .span-container span {
+        font-size: 0.75rem;
+    }
+}
