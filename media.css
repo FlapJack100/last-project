@@ -14,7 +14,7 @@
 
     .cards{
         overflow:visible;
-        overflow-x: auto;
+        /* overflow-x: auto; */
         scroll-snap-type: x mandatory;
         justify-content: flex-start;
         scroll-snap-align: start;
@@ -58,9 +58,13 @@
     }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1070px) {
     .grid-images {
         display: none;
+    }
+    .gallery-content {
+        height: auto !important;
+        
     }
 }
 
@@ -92,9 +96,10 @@
         .play-button {
             display: none;
         }
+        .aside-container {
+            overflow-y: hidden;
+        }
     }
-
-    
 
 
 
